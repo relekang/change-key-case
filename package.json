@@ -4,7 +4,7 @@
   "description": "Change the case for keys in an object with change-case",
   "main": "dist/index.js",
   "scripts": {
-    "release": "standard-version -i changelog",
+    "release": "standard-version -i changelog.md",
     "prepublishOnly": "npm run build",
     "build": "babel -Dd dist src && (flow gen-flow-files src/index.js > dist/index.js.flow || true)",
     "test": "jest"
