@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changeKeyCase(camel)(TestObject) 1`] = `
+Object {
+  "accountType": "standard",
+  "transactionTypeCode": 1,
+}
+`;
+
+exports[`changeKeyCase(constant)(TestObject) 1`] = `
+Object {
+  "ACCOUNT_TYPE": "standard",
+  "TRANSACTION_TYPE_CODE": 1,
+}
+`;
+
+exports[`changeKeyCase(dot)(TestObject) 1`] = `
+Object {
+  "account.type": "standard",
+  "transaction.type.code": 1,
+}
+`;
+
+exports[`changeKeyCase(header)(TestObject) 1`] = `
+Object {
+  "Account-Type": "standard",
+  "Transaction-Type-Code": 1,
+}
+`;
+
+exports[`changeKeyCase(lower)(TestObject) 1`] = `
+Object {
+  "account_type": "standard",
+  "transactiontypecode": 1,
+}
+`;
+
+exports[`changeKeyCase(no)(TestObject) 1`] = `
+Object {
+  "account type": "standard",
+  "transaction type code": 1,
+}
+`;
+
+exports[`changeKeyCase(param)(TestObject) 1`] = `
+Object {
+  "account-type": "standard",
+  "transaction-type-code": 1,
+}
+`;
+
+exports[`changeKeyCase(pascal)(TestObject) 1`] = `
+Object {
+  "AccountType": "standard",
+  "TransactionTypeCode": 1,
+}
+`;
+
+exports[`changeKeyCase(path)(TestObject) 1`] = `
+Object {
+  "account/type": "standard",
+  "transaction/type/code": 1,
+}
+`;
+
+exports[`changeKeyCase(sentence)(TestObject) 1`] = `
+Object {
+  "Account type": "standard",
+  "Transaction type code": 1,
+}
+`;
+
+exports[`changeKeyCase(snake)(TestObject) 1`] = `
+Object {
+  "account_type": "standard",
+  "transaction_type_code": 1,
+}
+`;
+
+exports[`changeKeyCase(swap)(TestObject) 1`] = `
+Object {
+  "ACCOUNT_TYPE": "standard",
+  "TRANSACTIONtYPEcODE": 1,
+}
+`;
+
+exports[`changeKeyCase(title)(TestObject) 1`] = `
+Object {
+  "Account Type": "standard",
+  "Transaction Type Code": 1,
+}
+`;
+
+exports[`changeKeyCase(upper)(TestObject) 1`] = `
+Object {
+  "ACCOUNT_TYPE": "standard",
+  "TRANSACTIONTYPECODE": 1,
+}
+`;

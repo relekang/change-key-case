@@ -1,0 +1,7 @@
+// @flow
+
+import curry from "curry";
+import changeCase from "change-case";
+export type CaseType = "camel" | "constant" | "dot" | "header" | "lower" | "lcFirst" | "no" | "param" | "pascal" | "path" | "sentence" | "snake" | "swap" | "title" | "upper" | "ucFirst";
+declare export var changeKeyCase: (caseType: "camel" | "constant" | "dot" | "header" | "lower" | "lcFirst" | "no" | "param" | "pascal" | "path" | "sentence" | "snake" | "swap" | "title" | "upper" | "ucFirst") => (o: Object) => Object & (caseType: "camel" | "constant" | "dot" | "header" | "lower" | "lcFirst" | "no" | "param" | "pascal" | "path" | "sentence" | "snake" | "swap" | "title" | "upper" | "ucFirst", o: Object) => Object;
+

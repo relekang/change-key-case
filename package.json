@@ -1,0 +1,51 @@
+{
+  "name": "change-key-case",
+  "version": "1.0.0-rc.1",
+  "description": "Change the case for keys in an object with change-case",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "babel -Dd dist src && (flow gen-flow-files src/index.js > dist/index.js.flow || true)",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/relekang/change-key-case.git"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*tests.js"
+    ]
+  },
+  "keywords": [
+    "change-case",
+    "objects"
+  ],
+  "author": "Rolf Erik Lekang <me@rolflekang.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relekang/change-key-case/issues"
+  },
+  "homepage": "https://github.com/relekang/change-key-case#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-flowtype": "^2.50.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "flow-bin": "^0.81.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {
+    "change-case": "^3.0.2",
+    "curry": "^1.2.0"
+  }
+}
