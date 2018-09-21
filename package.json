@@ -4,6 +4,7 @@
   "description": "Change the case for keys in an object with change-case",
   "main": "dist/index.js",
   "scripts": {
+    "release": "standard-version -i changelog",
     "prepublishOnly": "npm run build",
     "build": "babel -Dd dist src && (flow gen-flow-files src/index.js > dist/index.js.flow || true)",
     "test": "jest"
@@ -43,7 +44,8 @@
     "eslint-plugin-prettier": "^2.6.2",
     "flow-bin": "^0.81.0",
     "jest": "^23.6.0",
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "standard-version": "^4.4.0"
   },
   "dependencies": {
     "change-case": "^3.0.2",
