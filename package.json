@@ -9,7 +9,8 @@
     "test": "jest"
   },
   "files": [
-    "dist"
+    "dist",
+    "license"
   ],
   "repository": {
     "type": "git",
